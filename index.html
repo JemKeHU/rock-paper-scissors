@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1 class="main-h1">Rock Paper Scissors Game!</h1>
-    <button class="reset-button">Reset Game</button>
-    <hr class="hr-one">
-    <div id="buttons">
-      <button class="rock" id="rock">🗿</button>
-      <button class="paper" id="paper">📄</button>
-      <button class="scissors" id="scissors">✂️</button>
+    <div class="game-container">
+      <h1 class="main-h1">Rock Paper Scissors Game!</h1>
+      <div class="button-container">
+        <button class="reset-button">Reset Game</button>
+      </div>
+      <hr class="hr-one">
+      <div id="buttons">
+        <button class="button" id="rock">🗿</button>
+        <button class="button" id="paper">📄</button>
+        <button class="button" id="scissors">✂️</button>
+      </div>
+      <hr>
+      <div id="score-board">
+        <p class="round-para para">Round 1</p>
+        <p class="para" id="human-score">Human score: 0</p>
+        <p class="para" id="computer-score">Computer score: 0</p>
+        <p class="para">Round winner:</p>
+        <p class="winner-board para">Choose.</p>
+      </div>
+      <hr>
+      <p class="para">Game winner:</p>
+      <p class="overall-winner para"></p>
     </div>
-    <div id="score-board">
-      <p class="round-para">Round 1</p>
-      <p class="para" id="human-score">Human score: 0</p>
-      <p class="para" id="computer-score">Computer score: 0</p>
-      <p>Round winner:</p>
-      <p class="winner-board">Choose.</p>
-    </div>
-    <hr>
-    <p>Game winner:</p>
-    <p class="overall-winner"></p>
   </body>
 </html>
